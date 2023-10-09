@@ -1,11 +1,12 @@
 import React from 'react';
+import SearchBarOverview from './useState/SearchBarOverview';
 import './App.css';
 
 
 function App() {
     return (
     <div>
-        <Counter />
+        <SearchBarOverview  />
     </div>
     );
 }

@@ -1,17 +1,14 @@
 import { useState } from 'react';
 
-function EmailInput() {
-  const [errorMessage, setErrorMessage] = useState({ fName: "", lName: "" });
+function FormState() {
+  const [errorMessage, setErrorMessage] = useState('');
   function evaluateEmail(event) {
     const enteredEmail = event.target.value;
-    console.log(setErrorMessage);
-
     if (enteredEmail.trim() === '' || !enteredEmail.includes('@')) {
-      setErrorMessage('');
+      setErrorMessage('The entered email address is invalid.');
     } else {
       setErrorMessage('');
     }
-
   };
 
   return (
@@ -20,7 +17,6 @@ function EmailInput() {
       <p>{errorMessage}</p>
     </div>
   );
-
 };
 
-  export default EmailInput;
+export default FormState;
