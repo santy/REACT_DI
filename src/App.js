@@ -1,12 +1,12 @@
 import React from 'react';
-import ToogleTrueFalse from './customHook/ToggleTrueFalse';
+import Todo from './TodoList/Todo';
 import './App.css';
 
 
 function App() {
     return (
     <div>
-        <ToogleTrueFalse  />
+        <Todo  />
     </div>
     );
 }
