@@ -4,6 +4,11 @@ import { useState } from 'react';
 
 const NasaImage = () => {
     const [images, setImages] = useState();
+    const [number, setNumber] = useState(3);
+
+    function onChangeNumber(event){
+        setNumber(event.target.value)
+    }
 
     function onSearchSubmit(event){
         event.preventDefault();
@@ -11,8 +16,8 @@ const NasaImage = () => {
             params: { api_key: "KSG7zKq9BywPWH2gNFsDkbcB4nkRPvrDxhjxHpIb"}
         })
         .then(res => {
-          console.log(res.data.photos[1].img_src);
-          setImages(res.data.photos[1].img_src);
+          console.log(res.data.photos[number].img_src);
+          setImages(res.data.photos[number].img_src);
           
         })
         .catch(error => {
@@ -27,7 +32,8 @@ const NasaImage = () => {
             <input
                 type="search"
                 name="image-search"
-                className="c-search__input" />
+                className="c-search__input" 
+                onChange={onChangeNumber}/>
             <button>Search images</button>
             </form>
             <div>
