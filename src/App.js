@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import NasaImage from './axios/NasaImage';
+import Font from './axios/Font';
 
 
 function App() {
     return (
     <div>
-        <NasaImage  />
+        <Font  />
     </div>
     );
 }
