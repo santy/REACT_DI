@@ -6,7 +6,8 @@
         "email": "jonhy@yahoo.com",
         "phone": "9893548125",
         "companiesId": "1",
-        "id": 1
+        "id": 1,
+        "title": "titulo 1"
       },
       {
         "name": "Juan name",
@@ -14,7 +15,8 @@
         "email": "juan@gmail.com",
         "phone": "9893878452",
         "companiesId": "2",
-        "id": 4
+        "id": 4,
+        "title": "titulo 2"
       },
       {
         "id": 5,
@@ -22,7 +24,8 @@
         "username": "Niki",
         "email": "sobhan@yahoo.com",
         "phone": "989354812514",
-        "companiesId": "3"
+        "companiesId": "3",
+        "title": "titulo 3"
       },
       {
         "name": "Raquel",
@@ -30,7 +33,8 @@
         "email": "raquel_tovar@outlook.com",
         "phone": "1234567899",
         "companiesId": "1",
-        "id": 6
+        "id": 6,
+        "title": "titulo 4"
       }
     ],
     "companies": [
