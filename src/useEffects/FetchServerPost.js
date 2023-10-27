@@ -18,7 +18,7 @@ const data = {
 async function fetchPost(url){
   await fetch(url, {
   method: "POST", 
-  body: JSON.stringify(data), 
+  body: JSON.stringify(data), //convierte JS en JSON
   headers: {
     "Content-Type": "application/json",
   },
