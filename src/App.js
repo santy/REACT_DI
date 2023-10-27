@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import Font from './axios/Font';
-
+import Callback from './useEffects/Callback';
 
 function App() {
     return (
     <div>
-        <Font  />
+        <Callback />
     </div>
     );
 }

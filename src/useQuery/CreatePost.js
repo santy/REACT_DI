@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useMutation } from "react-query";
+import { useMutation, useQuery } from "react-query";
 import axios from "axios";
 import DisplayPosts from "./Displaypost";
 
@@ -13,6 +13,7 @@ const CreatePost = () => {
 
     const submitData = () => {
         mutation.mutate({ title, body });
+        
     };
 
     if (mutation.isLoading) {

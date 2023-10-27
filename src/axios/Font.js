@@ -34,7 +34,7 @@ class Font extends Component {
             Trending
           </button>
         </div>
-        <FontListUseEffectII sort={this.state.sort} />
+        <FontListII sort={this.state.sort} />
       </div>
     );
   }
