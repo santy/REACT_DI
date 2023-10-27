@@ -5,7 +5,7 @@ import React from 'react'
 const url = "http://localhost:5000/users";
 
 const data = {
-    name: "Erundino",
+    name: "ErundinoAwait3",
     username: "Runi",
     email: "jonhy@yahoo.com",
     phone: "9893548125",
@@ -13,20 +13,25 @@ const data = {
     title: "titulo 1"
   };
 
-const request = new Request(url, {
-  method: 'POST',
-  body: JSON.stringify(data),
-  headers: new Headers({
-    'Content-Type': 'application/json; charset=UTF-8'
-  })
-});
+
+
+async function fetchPost(url){
+  await fetch(url, {
+  method: "POST", 
+  body: JSON.stringify(data), 
+  headers: {
+    "Content-Type": "application/json",
+  },
+})}
 
 
 
 function FetchServerPost() {
+
     useEffect(function(){
-        fetch(request)
+        fetchPost(url)
         },[]);
+
 
   return (
     <div>FetchServerPost</div>
