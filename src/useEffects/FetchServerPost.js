@@ -5,12 +5,12 @@ import React from 'react'
 const url = "http://localhost:5000/users";
 
 const data = {
-    name: "ErundinoAwait3",
-    username: "Runi",
-    email: "jonhy@yahoo.com",
+    name: "Daenerys Targaryen",
+    username: "Madre de dragones",
+    email: "dragon@targaryen.com",
     phone: "9893548125",
     companiesId: "1",
-    title: "titulo 1"
+    title: "Jhon Nieve me pone"
   };
 
 
