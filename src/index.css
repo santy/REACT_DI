@@ -65,3 +65,23 @@ input.invalid {
 .info {
   border: 5px solid red;
 }
+
+.alert {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: green !important; 
+  color: black !important;
+}
+
+.info {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #d6aafa;
+  color: #410474;
+}
+
+.class_html{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+}
