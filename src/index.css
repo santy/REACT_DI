@@ -9,7 +9,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #242327;
 }
 
 form {
@@ -41,7 +40,6 @@ label {
 button {
   cursor: pointer;
   font: inherit;
-  padding: 0.5rem 1.5rem;
   background-color: #310485;
   color: white;
   border: 1px solid #310485;
