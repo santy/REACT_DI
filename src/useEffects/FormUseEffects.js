@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 
 function FormUseEffects() {
+  const [isButtonDisabled, setButtonDisabled] = useState(true); 
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredPassword, setEnteredPassword] = useState('');
 
@@ -15,7 +16,11 @@ function FormUseEffects() {
   const validateEmail = useCallback( //usando Callback se ejecuta useEffect siempre y cuando cambio enteredEmail y no cuando cambio el password
     function () {
       if (!enteredEmail.includes('@')) {
-        console.log('Invalid email!');
+        console.log('Invalid email! Button disabled');
+      }
+      else {
+        console.log('Valid email! Button enabled');
+        setButtonDisabled(false);
       }
     },
     [enteredEmail]
@@ -44,7 +49,7 @@ function FormUseEffects() {
         <label>Password</label>
         <input type="password" onChange={updatePasswordHandler} />
       </div>
-      <button>Save</button>
+      <button disabled={isButtonDisabled} >Save</button>
     </form>
   );
 }
